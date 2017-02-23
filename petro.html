@@ -86,17 +86,26 @@
                 <!--Suppe-->
                 <template id="produkt_template">
                     <div class="col-sm-4 ">
-                        <section class="row"> <img src="imgs/medium/bulgarskbondesuppe-md.jpg" alt="billede_1"> </section>
+                        <a href="#"><img class="img-responisve data_billede" src="imgs/small/rodbede-cabanossi-sm.jpg" alt=""></a>
+                        <section class="row"> </section>
                         <section class="row">
                             <div class="col-sm-6 suppe">
-                                <h4 class="data_navn">DATA_NAVN</h4>
-                                <h4 class="pris">Pris:<span class="data_pris">DATA_PRIS</span></h4>
-                                <!-- TODO: sæt udsolgt class ved udsolgt-->
-                                <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
-                                <h4 class="rabatpris">Pris: <span class="data_rabatpris"> DATA_RABATPRIS</span></h4> </div>
+                                <h3 class="data_navn">DATA_NAVN</h3>
+                                <h4 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h4>
+                                <!--TODO:
+                                 Sæt udsolgt class ved udsolgte produkter
+                                 Sæt rabat class ved rabat produkter
+                                 -->
+                                <h4 class="rabatpris">Pris:
+                                     <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                                <!--Skal kun vises ved rabat-->
+                                <h4 class="udsolgttekst">Denne vare er udsolgt</h4>
+                                <!--Skal kun vises ved udsolgte produkter-->
+                            </div>
                             <div class="col-sm-6">
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal"> Se flere detaljer </button>
+                                <!-- Modal -->
                             </div>
                         </section>
                     </div>
